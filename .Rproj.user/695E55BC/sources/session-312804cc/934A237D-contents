@@ -46,5 +46,8 @@ modelo1 <- BIOMOD_Modeling(bm.format = data_biomod,
                            metric.eval = c('KAPPA','TSS','ROC'),
                            var.import = 2,                #será muy poco?
                            seed.val = 42,                 #¿por qué 42?
-                           nb.cpu = 4)                    #¿por qué 4?
+                           nb.cpu = 4)                    #¿por qué 4???
+
+## Proyecta modelo a las variables
+
                            

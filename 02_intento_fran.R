@@ -51,16 +51,16 @@ suppressWarnings({
   
   
   modelo1 <- BIOMOD_Modeling(bm.format = data_biomod,                  #revisado
-                             modeling.id = nombre_corrida,             #revisando
-                             models = c("MAXENT", "RF", "GLM"),        #REVISANDO
-                             CV.strategy = 'random',
-                             CV.nb.rep = 2,
-                             CV.perc = 0.8,
-                             OPT.strategy = 'bigboss',
-                             metric.eval = c('KAPPA','TSS','ROC'),
-                             var.import = 2,
-                             seed.val = 42,
-                             nb.cpu = 4)
+                             modeling.id = nombre_corrida,             #revisado
+                             models = c("MAXENT", "RF", "GLM"),        #revisado
+                             CV.strategy = 'random',                   #revisado
+                             CV.nb.rep = 2,                            #revisado
+                             CV.perc = 0.8,                            #revisado
+                             OPT.strategy = 'bigboss',                 #revisado
+                             metric.eval = c('KAPPA','TSS','ROC'),     #revisado
+                             var.import = 2,                           #revisado
+                             seed.val = 42,                            #revisado
+                             nb.cpu = 4)                               #revisado
   
   ## Proyecta modelo a las variables
   modelo_proj_presente <- BIOMOD_Projection(bm.mod = modelo1,

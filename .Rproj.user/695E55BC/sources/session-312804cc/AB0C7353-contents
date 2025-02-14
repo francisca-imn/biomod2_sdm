@@ -59,8 +59,8 @@ suppressWarnings({
                              OPT.strategy = 'bigboss',                 #revisado
                              metric.eval = c('KAPPA','TSS','ROC'),     #revisado
                              var.import = 2,                           #revisado
-                             seed.val = 42,                            #REVISANDO
-                             nb.cpu = 4)
+                             seed.val = 42,                            #revisado
+                             nb.cpu = 4)                               #revisado
   
   ## Proyecta modelo a las variables
   modelo_proj_presente <- BIOMOD_Projection(bm.mod = modelo1,
